@@ -31,7 +31,7 @@ jobs:
         run: nci
 
       - name: Build
-        run: nr slidev build  winterppt.md --base /${{github.event.repository.name}}/
+        run: nr build --base /${{github.event.repository.name}}/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
